@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+	     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <title>AlphaDevs Login</title>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        
+        <script>
+            function homepage()
+            {
+                location.replace("https://alphadevs.tech/")
+            }
+        </script>
+
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body{
+    padding:0;
+    margin:0;
+    font-family: 'Mulish', sans-serif ;
+    
+    background-size: cover;
+    background-color: #19233f;
+}
+#img-head {
+    width:180px;
+    height:65px;
+    left:50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    padding-bottom: 5px; 
+}
+
+#img-head:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.login-box{
+    position: absolute;
+    width:300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    box-sizing: border-box;
+    box-shadow: 8px 8px 50px #000;
+    border-color: darkblue;
+    border: darkblue;
+    border-radius: 3mm; 
+    border-collapse: separate;
+    padding-right: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 5px;
+}
+
+.login-box:hover {
+    
+    box-shadow: 8px 8px 50px rgb(14, 66, 161);
+}
+
+.textbox{
+    width: 100%;
+    font-size: 2px;
+    padding: 4px 0;
+    margin: 8px;  
+    border-bottom: 1px solid; 
+}
+
+.textbox input{
+    border:none;
+    outline:none;
+    background: none;
+    color: white;
+    font-size: 18px;
+    width: 140px;
+    margin: 10px;
+}
+
+.btn {
+    width:60%;
+    background: none;
+    padding:7px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    color: rgb(53, 53, 100);
+    border-spacing: 5px;
+    float: center;
+    padding-left:10px;
+    border-radius:20px;
+    position:relative;
+    left:20%;   
+    background-color:white;
+    margin-top:10px;
+}
+.btn:hover {
+    background-color: rgb(53, 53, 100);
+    font-size: 17px; 
+    color:white; 
+}
+#reg {
+    font-size:14px;
+    cursor: pointer;
+    font-weight: normal;
+    text-decoration:none;
+    position:relative;
+    left:10%;
+    top:15px;
+}
+#reg:hover {
+    text-decoration: underline;
+    font-size: 16px;
+}
+#fp{
+    font-size:12px;
+    color: blue;
+    cursor: pointer;
+    font-weight: normal;
+    position:relative;
+    left:10%;
+    top:16px;
+}
+.textbox{
+      width:80%;
+      position:relative;
+      left:20px;
+}
+#fp:hover {
+    text-decoration:none;
+    font-size: 14px;
+}
+        </style>
+    </head>
+    <body>
+        
+        <div class="login-box">
+            <img src="alpimage.png" id="img-head" onclick="homepage()"> 
+            
+            <div class="textbox">
+                <i style='font-size:18px' class='fas'>&#xf2bd;</i>
+                <input type="text" placeholder="Username" name="" value="">
+            </div>
+            <div class="textbox">
+                <i style='font-size:18px' class='fas'>&#xf023;</i>
+                <input type="password" placeholder="Password" name="" value="">
+            </div>
+            <input  class="btn" type="button" value="login">
+
+            <h3 id="reg" style="color:white">click here to register</h3>
+            <h3 id="fp" style="color:white">forgot password?</h3>
+        
+        </div>
+    </body>
+</html>
